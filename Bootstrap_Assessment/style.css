@@ -9,10 +9,10 @@ body {
   margin: 0;
   line-height: 1.5;
   text-transform: uppercase;
-  background-color:cadetblue;
   text-align: center;
   font-family:Arial, Helvetica, sans-serif
 }
+
 .div2 {
   font-family: 'Helvetica';
   font-size: 100px;
@@ -21,7 +21,6 @@ body {
 }
 .button {
   border: 2px solid white;
-  background-color: cadetblue;
   color: white;
   padding: 14px 28px;
   font-family: 'Helvetica';
@@ -29,3 +28,11 @@ body {
   cursor: pointer;
   }
 }
+
+.c1 {
+color: white;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }}
