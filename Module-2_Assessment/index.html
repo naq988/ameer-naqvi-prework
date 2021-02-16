@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Star Wars</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section id="intro">
+      <div class="container">
+        <div class="row text-center justify-content-center shadow-lg p-4 mb-1 rounded mt-4">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 class="text-center">STAR WARS QUOTES</h2>
+                <hr class="my-6" />
+              <h3 class="intro">
+                DO YOU CONSIDER YOURSELF A STAR WARS FAN? IF SO, PLAY THIS GAME TO TEST WHAT YOU KNOW!<BR>INSTRUCTIONS:
+                YOU WILL BE GIVEN A RANDOM QUOTE FROM THE ORIGINAL STAR WARS TRILOGY. YOUR GOAL IS TO GUESS WHICH CHARACTER SAID THE QUOTE IN <B>6 
+                ATTEMPTS OR LESS.</b>
+                </h3>
+                <p class="intro">
+                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" >
+                            <button type="button" class="close pl-5" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <ul class="list-group">
+                              <li class="list-group-item">Luke</li>
+                              <li class="list-group-item">Leia</li>
+                              <li class="list-group-item">Obi-wan</li>
+                              <li class="list-group-item">Han Solo</li>
+                              <li class="list-group-item">Darth Vader</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                </p>
+                <p>PRESS ANY BUTTON TO START </p>
+              <!-- END MODAL -->
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id= "gameContainer">
+    <!-- Q&A box -->
+      <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-9" >
+            <div class="card mt-3" >
+              <span class="card text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                  <h4 id="quote" ></h4>
+                <footer >
+                  <medium>
+                    <span class="display-4 word text-warning text-uppercase" id="name" ></span>
+                  </medium>
+                </footer>
+                </blockquote>
+              </span>
+            </div>
+            </div>
+          </div>
+
+    <!-- TRACKER CARD -->
+      <div class="row justify-content-center"  >
+        <div class="col-md-10 ">
+          <div class="card-deck mt-3">
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">Scoreboard</h6>
+                <hr>
+                  <div class="row m-0 text-center">
+                    <div class="col text-success" >
+                      <span id="wins">wins:</span>
+                    </div>
+                    <div class="col text-danger">
+                      <span class="text-danger"id="losses">losses:</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- GUESSES REMAINING -->
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">GUESSES REMAINING</h6>
+                <hr>
+                  <div class="row text-center guessesremaining">
+                      <div class="col">
+                        <span id="guessesRemaining">
+                        </span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- WRONG GUESSES -->
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">WRONG GUESSES</h6>
+                <hr>
+                <div class="row text-center text-uppercase ">
+                  <div class="col">
+                    <span
+                    id="wrongLetters" >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/quotes.js"></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>

@@ -1,1 +1,68 @@
-
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* background: url("/images/64789.jpg") */
+    background: url("https://wallpapertag.com/wallpaper/full/a/3/6/146613-full-size-star-wars-star-background-1920x1080.jpg")
+      no-repeat fixed;
+    
+    background-size: cover;
+    overflow-x: hidden;
+    color: #cb8e14;
+    font-size: 12px;
+    font-family: Helvetica, Arial;
+    text-align: justify;
+    line-height: 120%;
+    font-weight: bold;
+  }
+  
+  .btn {
+    border-color: rgb(105, 60, 2);
+  }
+  .shadow-lg {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9) !important;
+  }
+  .jumbotron {
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  
+  p.intro {
+    margin-bottom: 0;
+  }
+  .intro {
+    font-size: 14px;
+  }
+  
+  .card {
+    border-color: rgb(15, 14, 1);
+    background: rgba(11, 12, 31, 0.7);
+  }
+  input {
+    background: grey;
+    color: rgb(174, 248, 37);
+  }
+  .word {
+    color: rgb(128, 78, 129);
+  }
+  
+  .tracker {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .modal-header {
+    margin: auto;
+  }
+  
+  .guessesremaining {
+    color: rgb(203, 50, 206);
+  }
+  
+  #gameContainer {
+    display: block;
+    visibility: hidden;
+    padding-top: 5%;
+  }
