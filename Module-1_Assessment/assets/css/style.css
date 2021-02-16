@@ -1,1 +1,116 @@
-hi
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    background-image: url(https://i.ibb.co/bmC4Tmm/moroccan-flower.png);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 0px;
+    overflow: auto;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  nav {
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  
+  .navbar {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .navbar > .container {
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .btn {
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+  }
+  
+  .card-img-overlay {
+    padding-left: 5%;
+    padding-top: 0;
+  }
+  
+  div.col-sm-4 {
+    padding-right: 20px;
+    margin-left: -6%;
+  }
+  
+  .navbar {
+    border-bottom: 2px solid #cccccc;
+  }
+  a.navbar-brand {
+    background-color: #4aaaa5;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  hr {
+    border-top: 2px solid;
+    border-color: #cccccc;
+  }
+  
+  .card-body {
+    margin: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .card {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    border-color: #dddddd;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    margin-bottom: 0;
+    /* padding-left: 2px; */
+    /* padding-left: 2px; */
+  }
+  
+  .card-heading {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    position: absolute;
+    bottom: 5%;
+    width: 130%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    height: 60px;
+    padding-top: 30px;
+  }
